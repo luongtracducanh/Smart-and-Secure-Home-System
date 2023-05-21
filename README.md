@@ -40,6 +40,11 @@ _Figure 4: Window security node_
 - 2 LEDs: Red indicates unathorized attempt to unlock the door and green indicates authorized access through the door.
 - Buzzer: To alert unauthorized attempts and send short buzzes when the door is unlocked
 
+#### Window Node
+
+- SW-520D: Tilt sensor to detect window status
+- Buzzer and LED: To alert when unauthorized attempts to open the window
+
 ### Edge Servers
 
 Each IOT node uses one Raspberry Pi as an edge device. The Arduino communicates with Raspberry Pi through serial communication while the Raspberry Pi communicate with each other through MQTT protocol. The Raspberry Pi also acts as a web server to host the user interface.

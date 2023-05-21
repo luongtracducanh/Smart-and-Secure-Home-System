@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script>
+    function AutoRefresh(t) {
+      setTimeout("location.reload(true);", t);
+    }
+  </script>
+</head>
+
+<body onload="JavaScrip:AutoRefresh(60000);">
+  <h1>Arduino Web Server</h1>
+  <nav>
+    <a class="current" href="index.html">Weather</a>
+    <a href="php/security.php">Security</a>
+  </nav>
+  <div class="row">
+    <div class="column">
+      <div class="chart-container">
+        <canvas id="mycanvas"></canvas>
+      </div>
+      <!-- display data analysis  -->
+      <p>Highest temperature: <span id="maxTemp"></span></p>
+      <p>Lowest temperature: <span id="minTemp"></span></p>
+      <p>Average temperature: <span id="avgTemp"></span></p>
+    </div>
+    <div class="column">
+      <div class="chart-container">
+        <canvas id="mycanvas2"></canvas>
+      </div>
+      <!-- display data analysis  -->
+      <p>Highest humidity: <span id="maxHumid"></span></p>
+      <p>Lowest humidity: <span id="minHumid"></span></p>
+      <p>Average humidity: <span id="avgHumid"></span></p>
+    </div>
+  </div>
+  <div class="gas-dislay">
+    <p>The indoor gas level is: <span class="gasLevel" id="gasLevel"></span></p>
+  </div>
+
+  <!-- button to set alert threshold to Arduino -->
+  <iframe name="hiddenFrame" class="hide"></iframe>
+  <h3>Set the threshold levels for the alert (insert numeric values only):</h3>
+  <form method="POST" action="php/alert.php" name="form" target="hiddenFrame">
+    <!-- to do: set default values from the database -->
+    <p>
+      <label class="alertLabel">Temperature</label>
+      <input type="number" name="alertTemp" id="alertTemp">
+    </p>
+    <p>
+      <label class="alertLabel">Humidity</label>
+      <input type="number" name="alertHumid" id="alertHumid">
+    </p>
+    <p>
+      <label class="alertLabel">Gas</label>
+      <input type="number" name="alertGas" id="alertGas">
+    </p>
+    <!-- <input type="radio" name="Value" value=1 id="turnOn" />
+    <label>Turn on</label>
+    <input type="radio" name="Value" value=0 id="turnOff" checked="checked" />
+    <label>Turn off</label> -->
+    <input type="submit" value="Submit" class="submit-button" />
+  </form>
+
+  <!-- iframe to display commands -->
+  <!-- <iframe src="http://localhost:8080/" height="550" width="100%"></iframe> -->
+
+  <!-- javascript -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/Chart.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

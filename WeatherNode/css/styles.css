@@ -1,0 +1,86 @@
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+.column {
+    flex: 33%;
+}
+
+.chart-container {
+    width: 480px;
+    height: auto;
+}
+
+.alertLabel {
+    width: 100px;
+}
+
+.hide {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 1px;
+    height: 1px;
+    ;
+}
+
+.gas-dislay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gasLevel {
+    font-weight: bold;
+}
+
+.submit-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: table;
+}
+
+p {
+    display: table-row;
+}
+
+label {
+    display: table-cell;
+}
+
+input {
+    display: table-cell;
+}
+
+body {
+    padding: 10px;
+}
+
+/* .submit-button {
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+} */
+
+.submit-button {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+iframe {
+    border-width: 0px;
+}
+
+nav {
+    padding-bottom: 10px;
+}

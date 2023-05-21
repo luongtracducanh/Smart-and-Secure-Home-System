@@ -33,4 +33,4 @@ async def openDoor(ctx, password):
         await ctx.send("Wrong password. Please try again.")
 
 
-bot.run("MTA5MjY1MzIyNDQ0MTQxMzY0Mg.GNYzVr.aty_mv8zMx0AoYUWfSMpMBj_xoaxiB_wSV6qUs")
+bot.run("ENTER_YOUR_API_KEY")

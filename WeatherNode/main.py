@@ -6,10 +6,17 @@ import urllib
 
 import MySQLdb
 import serial
+from discord_webhook import DiscordWebhook
 
-thingspeak_key = "Q4OHDFZRHABM7M8S"
+thingspeak_key = "ENTER_YOUR_API_KEY"
+webhook_url = 'ENTER_YOUR_API_KEY'
 
 
+def send_discord_msg(msg):
+    webhook = DiscordWebhook(url=webhook_url, content=msg)
+    response = webhook.execute()
+    
+    
 def upload_thingspeak(temperature, humidity, gas):
     params = urllib.parse.urlencode({'field1': temperature, 'field2': humidity, 'field3': gas, 'key': thingspeak_key})
     headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}

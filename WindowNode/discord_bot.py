@@ -20,4 +20,4 @@ async def turnOnWindowGuard(ctx):
     await ctx.send("You have turned on window guard")
 
 
-bot.run("MTA5MjY1MzIyNDQ0MTQxMzY0Mg.GNYzVr.aty_mv8zMx0AoYUWfSMpMBj_xoaxiB_wSV6qUs")
+bot.run("ENTER_YOUR_API_KEY")

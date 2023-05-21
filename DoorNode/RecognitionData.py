@@ -14,7 +14,7 @@ blob = bucket.blob(filename)
 filename2 = "%s/%s" % ('', "known/Known.jpg")
 blob2 = bucket.blob(filename2)
 
-webhook_url = 'https://discord.com/api/webhooks/1099183893409710110/W9kmjE47zIG2kxSZnORHR4VurmGH52U_RUTAuVmerg6EvBLFM-RtA7Lkn2APoJ-aw2sl'
+webhook_url = 'ENTER_YOUR_API_KEY'
 
 
 def send_discord_msg(msg):

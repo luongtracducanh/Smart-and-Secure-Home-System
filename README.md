@@ -9,14 +9,17 @@ For this project, we aim to develop a smart home system for sensing and security
 ![alt text](images/system.png)<br/>
 _Figure 1: Overall system_
 
-![alt text](images/weather_node.jpg)<br/>
+![alt text](images/weather_node.png)<br/>
 _Figure 2: Weather monitor node_
 
-![alt text](images/door_node.jpg)<br/>
+![alt text](images/door_node.png)<br/>
 _Figure 3: Door security node_
 
-![alt text](images/window_node.jpg)<br/>
+![alt text](images/window_node.png)<br/>
 _Figure 4: Window security node_
+
+![alt text](images/camera.png)<br/>
+_Figure 5: Camera attach to Raspberry Pi in door/gate security node_
 
 \*_The camera will be attached to the door node's edge device_
 
@@ -102,13 +105,13 @@ Node <-> Node
 
 - Google Cloud Platform
 
-![alt text](images/thingspeak2.png)<br/>
-_Figure 5: Thingspeak dashboard_
+![alt text](images/thingspeak.png)<br/>
+_Figure 6: Thingspeak dashboard_
 
 - ThingSpeak
 
 ![alt text](images/GCP.png)<br/>
-_Figure 6: GCP images_
+_Figure 7: GCP images_
 
 ## User Manual
 
@@ -117,19 +120,19 @@ _Figure 6: GCP images_
 - Weather: view statistics and data visualization of temperature, humidity, and gas level, set threshold for each value, and control the actuators
 
 ![alt text](images/weather_dashboard.png)<br/>
-_Figure 7: Weather dashboard_
+_Figure 8: Weather dashboard_
 
 - Security: 2 logs for door and window security. View the captured images of the door
 
 ![alt text](images/security_dashboard.png)<br/>
-_Figure 8: Security dashboard_
+_Figure 9: Security dashboard_
 
 ### Discord
 
 To view commands, type '/howto' in the chat box. The list of commands will be displayed.
 
 ![alt text](images/discord_commands.png)<br/>
-_Figure 9: Discord commands_
+_Figure 10: Discord commands_
 
 ## Limitations and Improvement Approaches
 
